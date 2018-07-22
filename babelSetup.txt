@@ -1,0 +1,11 @@
+1)npm init -y
+2)npm i -D babel-cli babel-preset-es2015 nodemon
+3)create .babelrc file
+4)add { "presets":["es2015"] } in .babelrc file
+5)change in package.json file--> "test":.. to
+  "dev":"babel-node server.js" (in scripts).
+6)to run the programm--> npm run dev
+7)later to add nodemon -->"dev":"nodemon --exec babel-node server.js"
+8) to get output of compiled files add-->
+"prestart": "babel controllers --out-dir dist",
+    "start": "node server.js" (in script)

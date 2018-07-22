@@ -1,0 +1,36 @@
+{
+  "name": "TrackerApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node server.js",
+    "prestart": "babel controllers --out-dir dist",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "crypto": "0.0.3",
+    "express": "^4.15.3",
+    "jsonwebtoken": "^7.4.1",
+    "mocha": "^3.4.2",
+    "mongodb": "^2.2.29",
+    "mongoose": "^4.10.8",
+    "mysql": "^2.13.0",
+    "promise": "^8.0.1",
+    "qr-image": "^3.2.0",
+    "qrcode": "^0.8.2",
+    "rand-token": "^0.3.0",
+    "shortid": "^2.2.8"
+  }
+}
